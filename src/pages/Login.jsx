@@ -40,7 +40,7 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 px-4 py-8">
       <div className="w-full max-w-sm bg-gray-800 rounded-xl p-6 border border-gray-700">
         <h1 className="text-2xl font-bold text-white text-center">
           Masuk ke AI Assistant

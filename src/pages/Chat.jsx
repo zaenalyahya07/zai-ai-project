@@ -10,7 +10,7 @@ import { ChatContext } from "../context/ChatContext";
 import Modal from "../components/Modal";
 import Card from "../components/Card";
 import { PromptContext } from "../context/PromptContext";
-import { BookmarkContext } from "../context/BookmarkContext"
+import { BookmarkContext } from "../context/BookmarkContext";
 
 function CodeBlock({ inline, className, children, ...props }) {
   const match = /language-(\w+)/.exec(className || "");
@@ -108,7 +108,7 @@ function Chat() {
   };
 
   return (
-    <div className="flex flex-col h-[calc(100vh-4rem-3rem)]">
+    <div className="flex flex-col h-[calc(100vh-4rem-2rem)] sm:h-[calc(100vh-4rem-3rem)]">
       <div className="flex-1 overflow-y-auto">
         {messages.length === 0 ? (
           <p className="text-gray-500 text-center mt-10">
@@ -122,7 +122,7 @@ function Chat() {
                 className={`group flex items-end gap-2 ${msg.role === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`px-4 py-2 rounded-lg max-w-md ${
+                  className={`px-4 py-2 rounded-lg max-w-[85%] sm:max-w-md ${
                     msg.role === "user"
                       ? "bg-blue-600 text-white"
                       : "bg-gray-700 text-gray-100"
@@ -167,7 +167,7 @@ function Chat() {
         )}
       </div>
 
-      <div className="flex items-end gap-3 pt-4 border-t border-gray-700">
+      <div className="flex items-end gap-2 sm:gap-3 pt-3 sm:pt-4 border-t border-gray-700">
         <Button variant="secondary" onClick={() => setIsPromptModalOpen(true)}>
           <Library size={18} />
         </Button>
