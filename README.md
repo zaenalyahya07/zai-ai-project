@@ -66,8 +66,8 @@ src/
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/username-kamu/ai-assistant-website.git
-cd ai-assistant-website
+git clone https://github.com/zaenalyahya07/zai-ai-project.git
+cd zai-ai-project
 ```
 
 ### 2. Install dependencies
